@@ -29,6 +29,7 @@ def build_dataset(config):
     size = config['image_size']
     if config['crop'] == 'random_crop':
         train_transforms = transforms.Compose([
+              transforms.Resize(size=(1200,1000)),
               transforms.RandomCrop(size=size),
               transforms.RandomRotation(degrees=5),
               transforms.ColorJitter(brightness=0.3, contrast=0.3, saturation=0.1),
