@@ -94,11 +94,13 @@ def build_network(config):
         nb_features=1024 #darknet
 
 
-    model = cnn_model(base_model, model_cut, nb_features, num_classes,
-                    lin_features, dropout_prob, bn_final=bn_final, concat_pool=concat_pool)
+    #model = cnn_model(base_model, model_cut, nb_features, num_classes,
+    #                lin_features, dropout_prob, bn_final=bn_final, concat_pool=concat_pool)
+
+    base_model.head[1] = torch.nn.Linear(in_features=1280, out_features=1, bias=True)
 
 
-    return model
+    return base_model
 
 
 def train(config=None):
