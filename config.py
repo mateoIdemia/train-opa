@@ -24,7 +24,7 @@ def get_config():
             'values': [ 'rexnet1_0x']
             },
         'image_size': {
-            'value': 112
+            'value': [112, 224, 448]
             },
         'crop': {
             'values': [ 'full_card']
