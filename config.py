@@ -27,7 +27,7 @@ def get_config():
             'value': 112
             },
         'crop': {
-            'values': [ 'full_card', 'random_crop']
+            'values': [ 'full_card']
             },
 
 
