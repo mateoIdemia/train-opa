@@ -20,12 +20,13 @@ def get_config():
         'wd': {
             'values': [ 0, 0.000001, 0.00001, 0.0001, 0.001]
             },
+        'image_size': {
+            'values': [ 112, 224, 448]
+            },
         'model_arch': {
             'values': [ 'rexnet1_0x']
             },
-        'image_size': {
-            'values': [112, 224, 448]
-            },
+
         'crop': {
             'values': [ 'full_card']
             },
