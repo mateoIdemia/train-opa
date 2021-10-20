@@ -15,7 +15,7 @@ def get_config():
             'values': [10, 20]
             },
         'lr': {
-            'values': [ 0.0007, 0.001, 0.003]
+            'values': [0.0003, 0.0007, 0.001, 0.003]
             },
         'wd': {
             'values': [ 0, 0.000001, 0.00001, 0.0001, 0.001]
@@ -24,7 +24,7 @@ def get_config():
             'values': [ 'rexnet1_0x']
             },
         'image_size': {
-            'value': [112, 224, 448]
+            'values': [112, 224, 448]
             },
         'crop': {
             'values': [ 'full_card']
