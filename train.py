@@ -61,8 +61,8 @@ def build_dataset(config):
         ])
 
 
-    dsTrain = ImageFolder('data/ds_lasink/train/', train_transforms, target_transform=target_transform)
-    dsVal = ImageFolder('data/ds_lasink/test/', val_transforms, target_transform=target_transform)
+    dsTrain = ImageFolder('data/ds_0/train/', train_transforms, target_transform=target_transform)
+    dsVal = ImageFolder('data/ds_0/test/', val_transforms, target_transform=target_transform)
     #dsTest = ImageFolder('data/WildFire/test/', val_transforms, target_transform=target_transform)
    
     train_loader = DataLoader(dsTrain, batch_size=config['batch_size'], shuffle=True)
